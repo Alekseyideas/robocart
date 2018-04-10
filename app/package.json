@@ -1,0 +1,11 @@
+{
+  "name": "robocart",
+  "version": "1.0.0",
+  "description": "robocart project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksey",
+  "license": "ISC"
+}
