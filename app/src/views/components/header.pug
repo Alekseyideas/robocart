@@ -1,0 +1,30 @@
+header.header
+  .header__wrapper-left
+    a.header__logo
+      +image('header','logo.svg')
+    .header__links
+      a(href='#')
+        +image('header','ic-home-normal.svg')
+        +image('header','ic-home-active.svg')(class="header__hover-image")
+      a(href='#')
+        +image('header','ic-offer-normal.svg')
+        +image('header','ic-offerl-active.svg')(class="header__hover-image")
+      a(href='#')
+        +image('header','ic-shopping-list-normal.svg')
+        +image('header','ic-shopping-list-active.svg')(class="header__hover-image")
+      a(href='#')
+        +image('header','ic-shopping-cart-normal.svg')
+        +image('header','ic-shopping-cart-active.svg')(class="header__hover-image")
+      a(href='#')
+        +image('header','ic-search-normal.svg')
+        +image('header','ic-search-active.svg')(class="header__hover-image")
+
+      a(href='#')
+        +image('header','ic-banner-normal.svg')
+        +image('header','ic-banner-active.svg')(class="header__hover-image")
+  .header__user
+    .header__user-name
+      span Jerome Benson
+    .header__user-image-wrap
+      .header__user-image
+      .header__user-vip
