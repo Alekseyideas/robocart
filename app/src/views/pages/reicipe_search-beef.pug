@@ -1,0 +1,34 @@
+extends ../layouts/base
+append config
+  - var pageTitle = 'Product search results: <span>Beef</span>'
+block content
+  main.search
+    include ../components/title-nav
+    .wrapper
+      .search__wrapper
+        - for(var i = 0; i < 1; i++)
+          .search__row
+            .search__left-block
+              .search__item-img
+                + image('my_offers','bitmap.jpg')
+              .search__item-price-loc-star
+                .search__item-price-loc
+                  .search__item-price
+                    .search__item-txt Difficulty:
+                    .search__item-val Medium
+                  .search__item-loc
+                    .search__item-txt Ingredients:
+                    span.search__item-val 9
+                .search__item-clock 3:45
+            .search__right-block
+              .search__item-title Avocado Superlarge, Super fruit from Bali, packages 5kg
+              .search__item-info When I was just starting 6th grade I got my first job. Paperboys are Boy, was I excited. At that time I had to spent a lot of time actually playing
+                span.search__item-dotes …
+                span.search__item-hiddenInfo  conducted on near flying asteroids have performed some pretty amazing studies of these eccentric celestial bodies. In 1994 the Galileo probe got within 1000 miles of the asteroid Ida and discovered that Ida actually had its own moon
+                a(href="#").view-more View more
+                button.btn-add
+                  span.btn-add__img
+                    + image('btns','ic-add.svg')
+                  span.btn-add__text Add to shopping list
+
+

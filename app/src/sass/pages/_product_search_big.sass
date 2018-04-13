@@ -1,0 +1,83 @@
+.search
+  background: $body-color
+  &__wrapper
+    //padding: $wr-padding
+    padding-top: 20px
+    padding-right: 10px
+    overflow: auto
+    max-height: 319px
+    max-height: calc(100vh - 64px * 2 - 79px -  14px)
+
+
+  &__row
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+    &:nth-child(1)
+      margin-top: 0
+
+  &__left-block
+    width: 336px
+  &__right-block
+    padding-left: 10px
+    width: 552px
+  &__item-price-loc-star,
+  &__item-price,
+  &__item-loc,
+  &__item-val
+    display: flex
+    align-items: center
+  &__item-price-loc-star
+    justify-content: space-between
+    margin-top: 20px
+  &__item-val
+    margin-left: 15px
+    font-size: 2.3rem
+    color: #161718
+    font-weight: 700
+  &__item-txt
+    font-size: 2.1rem
+    color: rgba(#161718,.88)
+  .price-currency
+    margin-right: 3px
+  &__item-loc
+    margin-top: 10px
+  &__item-img
+    img
+      mix-blend-mode: multiply
+  &__item-star,
+  &__item-clock
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: 700
+    font-size: 2rem
+  &__item-star
+    background: no-repeat center / 65px
+    @include bg_img('search','star.svg')
+    color: white
+    width: 67px
+    height: 75px
+    padding-top: 5px
+  &__item-clock
+    background: no-repeat center / cover
+    @include bg_img('search','clock.svg')
+    color: #161718
+    width: 67px
+    height: 76px
+    padding-top: 9px
+  &__item-title
+    font-size: 3.4rem
+    color: rgba(#161718,.87)
+    line-height: 48px
+    font-weight: 700
+  &__item-info
+    font-size: 2.3rem
+    color: rgba(#161718,.88)
+    line-height: 38px
+    margin-top: 10px
+  &__item-hiddenInfo
+    display: none
+
+
+

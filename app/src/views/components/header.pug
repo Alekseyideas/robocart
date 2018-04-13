@@ -1,25 +1,25 @@
 header.header
   .header__wrapper-left
-    a.header__logo
+    a(href='/home.html').header__logo
       +image('header','logo.svg')
     .header__links
-      a(href='#')
+      a(href='/home.html').active
         +image('header','ic-home-normal.svg')
         +image('header','ic-home-active.svg')(class="header__hover-image")
-      a(href='#')
+      a(href='/my_offers.html')
         +image('header','ic-offer-normal.svg')
         +image('header','ic-offerl-active.svg')(class="header__hover-image")
-      a(href='#')
+      a(href='shopping_list.html')
         +image('header','ic-shopping-list-normal.svg')
         +image('header','ic-shopping-list-active.svg')(class="header__hover-image")
-      a(href='#')
+      a(href='shopping_cart.html')
         +image('header','ic-shopping-cart-normal.svg')
         +image('header','ic-shopping-cart-active.svg')(class="header__hover-image")
-      a(href='#')
+      a(href='reicipe_search.html')
         +image('header','ic-search-normal.svg')
         +image('header','ic-search-active.svg')(class="header__hover-image")
 
-      a(href='#')
+      a(href='reicipe_search-beef.html')
         +image('header','ic-banner-normal.svg')
         +image('header','ic-banner-active.svg')(class="header__hover-image")
   .header__user

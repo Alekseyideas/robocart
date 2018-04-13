@@ -1,0 +1,23 @@
+extends ../layouts/base
+append config
+  - var pageTitle = 'Shopping list'
+block content
+  main.shopping_list
+    include ../components/title-nav
+    .shopping_list__wrapper
+      - var active;
+      - for(var i = 0; i < 10; i++)
+        if(i===1)
+          - active = 'active'
+        else
+          - active = ''
+        a.shopping_list__item(class=active href='#')
+          .shopping_list__item-img-name
+            .shopping_list__item-img(style="background-image: url(img/my_offers/img.jpg)")
+            .shopping_list__item-name.h5 Avocado Superlarge, huge tasty guy from Bali, 5kg
+          .shopping_list__item-aim-like-check
+            .shopping_list__item-aim
+            .shopping_list__item-like
+            .shopping_list__item-check
+
+

@@ -12,6 +12,7 @@ const path = {
   pug: './src/views/',
   sass: './src/sass/',
   css: './public/css/',
+  js: './public/js/',
   img: './src/img/',
   img_optimized: './public/img/',
 };
@@ -64,6 +65,7 @@ gulp.task('image', function () {
 gulp.task('watch', function () {
   gulp.watch(path.sass + '**/*.sass', ['sass']);
   gulp.watch(path.pug + '**/*.pug', ['rebuild']);
+  gulp.watch(path.js + '**/*.js', ['rebuild']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);

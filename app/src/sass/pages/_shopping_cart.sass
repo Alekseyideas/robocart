@@ -1,0 +1,29 @@
+.shopping-cart
+  background: $body-color
+  &__item-img-name,
+  &__item-price,
+  &__item-total-price,
+  &__item-count-price-total-price
+    display: flex
+    align-items: center
+  &__item-img-name
+    width: 540px
+  &__item-count-price-total-price
+    font-size: 2.4rem
+    color: rgba(#161718,.7)
+    font-weight: 700
+    &>div
+      margin-right: 62px
+      &:last-child
+        margin-right: 0
+        color: rgba(#161718,1)
+  .shopping_list
+    &__item
+      padding-top: 10px
+      padding-bottom: 10px
+      &.active
+        background: rgba(#a1a1a1,.12)
+    &__item-name
+      width: 430px
+  .price-currency
+    margin-right: 3px

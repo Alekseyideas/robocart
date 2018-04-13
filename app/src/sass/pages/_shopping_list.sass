@@ -1,0 +1,66 @@
+.shopping_list
+  background: $body-color
+  &__item,
+  &__item-img-name,
+  &__item-aim-like-check
+    display: flex
+    align-items: center
+  &__item
+    padding: 13px $wr-padding
+    justify-content: space-between
+    color: #161718
+    &:focus,
+    &:hover
+      color: #161718
+    &.unknown
+      background: rgba(#f15539,.12)
+      .shopping_list__item-name
+        color: #f15539
+    &.active
+      background: rgba($blue,.12)
+      .shopping_list__item-aim
+        display: block
+  &__item-img-name
+    width: 670px
+  &__item-aim-like-check
+    width: 148px
+    justify-content: flex-end
+  &__item-img
+    width: 47px
+    height: 47px
+    border-radius: 5px
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+  &__wrapper
+    margin-top: 14px
+    overflow: auto
+    max-height: 319px
+    max-height: calc(100vh - 64px * 2 - 79px -  14px)
+
+  &__item-name
+    max-width: 565px
+    width: 100%
+    margin-left: 15px
+  &__item-check,
+  &__item-like,
+  &__item-aim
+    background: no-repeat center / cover
+    margin-left: 20px
+  &__item-check
+    width: 32px
+    height: 32px
+    @include bg_img('shopping_list','ic-check.svg')
+  &__item-like
+    width: 36px
+    height: 32px
+    @include bg_img('shopping_list','ic-favorite.svg')
+  &__item-aim
+    width: 38px
+    height: 38px
+    @include bg_img('shopping_list','ic-product-near.svg')
+    display: none
+    margin-left: 0
+
+
+

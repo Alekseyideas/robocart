@@ -1,0 +1,36 @@
+extends ../layouts/base
+append config
+  - var pageTitle = 'Shopping cart'
+block content
+  main.shopping-cart
+    include ../components/title-nav
+    .shopping_list__wrapper
+      - var active;
+      - var unknown;
+      - for(var i = 0; i < 10; i++)
+        if(i===0)
+          - active = 'active'
+        else
+          - active = ''
+        if(i===2 || i===6)
+          - unknown = 'unknown'
+          a.shopping_list__item(class=unknown href='#')
+            .shopping-cart__item-img-name
+              .shopping_list__item-img(style="background-image: url(img/shopping_list/unknown.svg)")
+              .shopping_list__item-name.h5 Unknown item
+        else
+          - unknown = ''
+          a.shopping_list__item(class=active href='#')
+            .shopping-cart__item-img-name
+              .shopping_list__item-img(style="background-image: url(img/my_offers/img.jpg)")
+              .shopping_list__item-name.h5 Avocado Superlarge
+            .shopping-cart__item-count-price-total-price
+              .shopping-cart__item-count 5
+              .shopping-cart__item-price
+                span.price-currency $
+                span 50.00
+              .shopping-cart__item-total-price
+                span.price-currency $
+                span 550.00
+
+

@@ -1,6 +1,6 @@
 extends ../layouts/base
 append config
-  - var pageTitle = 'Home page'
+  - var pageTitle = 'My offers'
 block content
   main.my_offers
     include ../components/title-nav
@@ -8,14 +8,16 @@ block content
       .my_offers__wrapper
         .my_offers__item
           .my_offers__item-img(style='background:url(img/my_offers/img.jpg) no-repeat center top / cover')
+            .my_offers__icon-added
           .my_offers__item-info
             .my_offers__item-title
               span Avocado Superlarge, Weight from 5kg
             .my_offers__item-price
               span.my_offers__currency $
               span 2 200.00
-        .my_offers__item
+        .my_offers__item.active
           .my_offers__item-img(style='background:url(img/my_offers/img-2.jpg) no-repeat center top / cover')
+            .my_offers__icon-added
           .my_offers__item-info
             .my_offers__item-title
               span Kiwi Vitamin C God, chinese gooseberry …
@@ -24,6 +26,7 @@ block content
               span 500.00
         .my_offers__item
           .my_offers__item-img(style='background:url(img/my_offers/img-3.jpg) no-repeat center top / cover')
+            .my_offers__icon-added
           .my_offers__item-info
             .my_offers__item-title
               span Banana Hugestpack, the biggest weight…
@@ -32,6 +35,7 @@ block content
               span 300.00
         .my_offers__item
           .my_offers__item-img(style='background:url(img/my_offers/img-4.jpg) no-repeat center top / cover')
+            .my_offers__icon-added
           .my_offers__item-info
             .my_offers__item-title
               span Orange Euphoria Multipacks
